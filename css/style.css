@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --primary-light: #3a66a0;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+  --white: #fff;
+  --greyLight-1: #e4ebf5;
+  --greyLight-2: #c8d0e7;
+  --greyDark: #848ea8;
+  --background-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.input-data {
+  position: relative;
+}
+
+.input-data i {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  transform: rotate(180deg);
+  font-size: 35px;
+  color: var(--greyDark);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.input-data i:active{
+  left: 6%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: var(--background-color);
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 425px;
+  height: 550px;
+  padding: 15px;
+  border-radius: 1rem;
+  box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2),
+    -0.2rem -0.2rem 1.8rem var(--white);
+}
+
+.row-one,
+.row-two,
+.row-three,
+.row-four {
+  display: flex;
+  justify-content: space-around;
+}
+
+#result,
+.operations-fields input, 
+#toggleDarkMode {
+  width: 100%;
+  height: 20vh;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2),
+    inset -0.2rem -0.2rem 0.5rem var(--white);
+    background: transparent;
+  text-align: right;
+  color: var(--primary-dark);
+}
+
+#result {
+  padding-right: 20px;
+  font-size: 65px;
+  font-weight: 700;
+}
+
+button {
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
+    -0.2rem -0.2rem 0.5rem var(--white);
+  width: 150px;
+  height: 80px;
+  margin: 10px;
+  border: none;
+  text-align: center;
+  color: var(--greyDark);
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--background-color);
+  transition: all 0.2s ease;
+}
+
+.symbol {
+  background: var(--primary);
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--primary-dark),
+    -0.2rem -0.2rem 0.5rem var(--white);
+  font-size: 24px;
+  color: #fff;
+}
+
+button:active {
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2),
+    inset -0.2rem -0.2rem 0.5rem var(--white);
+}
+
+.symbol:active {
+  box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-dark),
+    inset -0.2rem -0.2rem 1rem var(--primary-light);
+}
+
+.operations-fields {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 10%;
+  left: 10%;
+}
+
+.operations-fields input:nth-child(4) {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.operations-fields input {
+  margin-bottom: 10px;
+  width: 200px;
+  height: 45px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--greyDark);
+}
+
+label {
+  color: var(--greyDark);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.credits {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  right: 4%;
+  bottom: 6%;
+  color: var(--greyDark);
+  font-size: 12px;
+  opacity: 0.7;   
+  display: flex;
+}
+
+.credits i {
+    font-size: 15px;
+}
+
+.credits strong{
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.credits strong:hover{
+  color: var(--primary-dark);
+}
+
+#toggleDarkMode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: 5%;
+  top: 7%;
+  height: 30px;
+  width: 65px;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#modeState{
+  position: absolute;
+  color: var(--greyDark);
+  right: 4%;
+  top: 13%;
+}
+
+#modeState strong {
+  color: var(--primary-dark);
+}
+
+.switch {
+  position: absolute;
+  background: var(--greyDark);          
+  height: 25px;
+  width: 25px;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  bottom: 50%;
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+#toggleDarkMode i{
+  color: var(--greyDark);
+  padding: 7px;
+}
+
+.darkModeActive {
+  position: absolute;
+  background: var(--greyDark);          
+  height: 25px;
+  width: 25px;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  bottom: 50%;
+  border-radius: 50%;
+  transition: 0.5s ease;
+}

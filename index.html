@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.icon-icons.com/icons2/923/PNG/512/calculator_icon-icons.com_72046.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Victor Reyes | Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="input-data">
+        <input id="result" type="text" readonly />
+        <i class="ri-delete-back-2-line"></i>
+      </div>
+      <div class="row-one">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="symbol" value="+">+</button>
+      </div>
+      <div class="row-two">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="symbol" value="-">-</button>
+      </div>
+      <div class="row-three">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="symbol" value="*">x</button>
+      </div>
+      <div class="row-four">
+        <button class="symbol" value="CE">CE</button>
+        <button>0</button>
+        <button class="symbol" value="=">=</button>
+        <button class="symbol" value="/">÷</button>
+      </div>
+    </div>
+    <div class="operations-fields">
+      <label for="first-number">First Number</label>
+      <input type="text" name="first-number" id="first-number" readonly />
+      <label for="first-number">Operation</label>
+      <input type="text" name="operation" id="operation" readonly />
+      <label for="first-number">Second Number</label>
+      <input type="text" name="second-number" id="second-number" readonly />
+    </div>
+    <div class="credits">
+      <i class="ri-copyright-line"></i>
+      <h3>Made by <strong>Victor Reyes</strong></h3>
+    </div>
+    <div class="modeContainer">
+      <div id="toggleDarkMode">
+        <i class="ri-sun-line"></i>
+        <i class="ri-moon-line"></i>
+        <div id="switch" class="switch"></div>
+      </div>
+      <h5 id="modeState">Light Mode On</h5>
+    </div>
+
+    <script src="js/app.js"></script>
+
+    
+  </body>
+</html>
