@@ -1,3 +1,5 @@
+#About
+
 I use HTML5, CSS3 and JavaScript to create this calculator.
 This calculator is a little bit diferent that normal calculators projects. I also add the dark mode for those who hates light mode.
 Hope you like it!
