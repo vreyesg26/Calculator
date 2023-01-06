@@ -8,7 +8,7 @@ getComputedStyle(document.documentElement).getPropertyValue("--greyLight-2");
 getComputedStyle(document.documentElement).getPropertyValue("--background-color");
 getComputedStyle(document.documentElement).getPropertyValue("--greyDark");
 
-function colorChange() {
+const colorChange = () => {
   if (result.value > 0) {
     // Green Color Change
     document.documentElement.style.setProperty("--primary-light", "#42aa34");

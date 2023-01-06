@@ -143,6 +143,7 @@ button:active {
   text-align: center;
   font-weight: 700;
   color: var(--greyDark);
+  outline: none;
 }
 
 label {
